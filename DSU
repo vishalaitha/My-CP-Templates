@@ -3,7 +3,7 @@ struct DSU {
     vector<int> siz, par, val;
     set<int> maxi;
  
-    UFDS(int _n): n(_n), siz(_n), par(_n), val(_n) {
+    DSU(int _n): n(_n), siz(_n), par(_n), val(_n) {
         iota(par.begin(), par.end(), 0);
         fill(siz.begin(), siz.end(), 1);
         fill(val.begin(), val.end(), -1);
