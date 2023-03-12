@@ -1,0 +1,13 @@
+vector<vector<int>>v(5e5+10);
+vector<int>visited(5e5+10);
+void dfs(int u) {
+
+    if(visited[u])
+        return;
+
+    visited[u]=1;
+    
+    for (auto child : v[u]) {
+         dfs(child);
+    }
+}
